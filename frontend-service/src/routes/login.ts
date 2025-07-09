@@ -7,8 +7,14 @@ router.get('/login', (_, res) => {
 });
 
 router.post('/login', (req, res) => {
-  const { username, password } = req.body;
-  console.log(`Login attempt: ${username}, ${password}`);
+  const { username } = req.body;
+
+  if (!username) {
+    return res.status(400).send('Username is required');
+  }
+
+  // TODO: using auth-service
+  req.session.user = { username };
   res.send('Processing login');
 });
 
