@@ -1,2 +1,2 @@
-# gov-news
-gov-news
+# kor-gov-news
+kor-gov-news
