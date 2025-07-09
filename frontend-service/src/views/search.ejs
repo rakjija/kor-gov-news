@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Search Page</title>
+  </head>
+  <body>
+    <h1>Search Page</h1>
+    <form
+      action="/search"
+      method="GET"
+    >
+      <input
+        type="text"
+        name="query"
+        placeholder="Enter your search..."
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- mock 데이터 출력용 자리 -->
+    <div id="results">
+      <p>=== 검색 결과 ===</p>
+    </div>
+  </body>
+</html>
