@@ -4,6 +4,9 @@
       "path": "."
     },
     {
+      "path": "frontend-service"
+    },
+    {
       "path": "posts-service"
     }
   ],
