@@ -6,9 +6,6 @@
     {
       "path": "frontend-service"
     },
-    {
-      "path": "posts-service"
-    }
   ],
   // "settings": {
   //   // 예시: 특정 서비스에 biome 적용
