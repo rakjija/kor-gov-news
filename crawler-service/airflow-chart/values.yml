@@ -1,0 +1,31 @@
+# airflow-chart/values.yaml
+
+executor: LocalExecutor
+
+airflow:
+  image:
+    repository: apache/airflow
+    tag: 2.11.0
+    pullPolicy: IfNotPresent
+
+  config:
+    AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+
+web:
+  defaultUser:
+    enabled: true
+    username: admin
+    password: admin
+
+  service:
+    type: NodePort
+    nodePort: 30088
+
+webserver:
+  service:
+    type: ClusterIP
+
+dags:
+  persistence:
+    enabled: true
+    existingClaim: airflow-dags-pvc
